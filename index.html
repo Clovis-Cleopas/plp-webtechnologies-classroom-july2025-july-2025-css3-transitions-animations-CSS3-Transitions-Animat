@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediMart - Medical Equipment Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MediMart: Medical Equipment & Supplies</h1>
+    </header>
+    <main>
+        <!-- Part 1: CSS Animations -->
+        <section id="hero-section">
+            <h2>Explore Our Products</h2>
+            <button class="animated-btn">View Latest Offers</button>
+        </section>
+
+        <!-- New: Product Listing Section -->
+        <section id="product-listing">
+            <h2>Our Medical Equipment</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150?text=Stethoscope" alt="Stethoscope">
+                    <h3>Stethoscope</h3>
+                    <p class="price">Price: $29.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150?text=Wheelchair" alt="Wheelchair">
+                    <h3>Wheelchair</h3>
+                    <p class="price">Price: $199.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150?text=Thermometer" alt="Thermometer">
+                    <h3>Digital Thermometer</h3>
+                    <p class="price">Price: $15.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150?text=Syringe" alt="Syringe">
+                    <h3>Syringe (Pack of 10)</h3>
+                    <p class="price">Price: $9.99</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 2 & 3: Product Card with Flip Animation -->
+        <section id="product-section">
+            <h2>Featured Product</h2>
+            <div class="product-card" id="product-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Stethoscope</h3>
+                        <p>Price: $29.99</p>
+                        <button class="flip-btn">View Details</button>
+                    </div>
+                    <div class="card-back">
+                        <h3>Stethoscope Details</h3>
+                        <p>High-quality, dual-head stethoscope for medical professionals.</p>
+                        <button class="flip-btn">Back</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Sliding Popup -->
+        <section id="popup-section">
+            <button id="open-popup">Request a Quote</button>
+            <div id="popup" class="popup">
+                <h3>Inquiry Form</h3>
+                <p>Submit your request for a custom quote.</p>
+                <button id="close-popup">Close</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
